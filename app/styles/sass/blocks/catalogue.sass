@@ -1,0 +1,600 @@
+.breadCrumbs
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	flex-flow: row wrap
+	margin-top: 40px
+
+.catalogue__filer__wrap__overlay
+	display: none
+.breadCrumbs__nav
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	flex-flow: row nowrap
+
+.breadCrumbs__item
+	position: relative
+	display: flex
+	white-space: nowrap
+	justify-content: flex-start
+	align-items: center
+	margin-right: 10px
+	&::after
+		position: relative
+		margin-left: 8px
+		content: url(#{$assetImages}/breadCrumbs__item__img.svg)
+	&:last-child
+		&::after
+			display: none
+.breadCrumbs__item__link
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 170%
+	letter-spacing: 0.03em
+	color: #A2A2AD
+.catalogue__title__wrap
+	display: flex
+	position: relative
+	flex-flow: row nowrap
+	justify-content: flex-start
+	align-items: flex-end
+.catalogue__title
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-end
+	font-style: normal
+	font-weight: 400
+	font-size: 32px
+	line-height: 135%
+	color: #1D1D1F
+	background: #fff
+.catalogue__title__quantity
+	position: relative
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 150%
+	color: #A2A2AD
+	margin-left: 16px
+	margin-bottom: 5px
+.catalogue__main
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	background: #F5F5F7
+
+.catalogue__filer
+	position: relative
+	display: flex
+	width: 100%
+	flex-flow: column nowrap
+	justify-content: space-between
+	align-items: flex-start
+	border-bottom: 1px solid #E6E6EB
+	padding-right: 20px
+	padding-left: 20px
+	padding-top: 32px
+	padding-bottom: 32px
+	&:last-child
+		border-bottom: none
+.catalogue__filer__parameters
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	padding-left: 20px
+	padding-right: 20px
+	padding-bottom: 32px
+	border-bottom: 1px solid #E6E6EB
+.catalogue__filer__parameters__title
+	position: relative
+	font-style: normal
+	font-weight: 500
+	font-size: 16px
+	line-height: 150%
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #1D1D1F
+.catalogue__filer__wrap
+	position: relative
+	display: flex
+	width: 330px
+	border: 1px solid #E6E6EB
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	padding: 24px 0
+	margin-right: 20px
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.catalogue__filer__parameters__value
+	position: relative
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	font-style: normal
+	font-weight: 500
+	font-size: 16px
+	line-height: 150%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+	&::after
+		width: 24px
+		height: 24px
+		position: relative
+		margin-left: 10px
+		content: url(#{$assetImages}/catalogue__filer__parameters__value__img.svg)
+.catalogue__filer__title
+	position: relative
+	width: 100px
+	text-align: left
+	font-style: normal
+	font-weight: 500
+	font-size: 16px
+	line-height: 150%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+	white-space: nowrap
+	margin-bottom: 28px
+.catalogue__filer__lists
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-self: flex-start
+	align-items: flex-start
+.catalogue__filer__item
+	position: relative
+	display: flex
+	width: 100%
+	white-space: nowrap
+	flex-flow: row nowrap
+	justify-content: space-between
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 135%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+	margin-bottom: 10px
+.catalogue__filer__lists.scatalogue__filer__color__lists
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-evenly
+	align-items: flex-start
+.catalogue__filer__color__item
+	margin: 5px
+.catalogue__filer__parameters__button
+	width: 100%
+	display: block
+	position: relative
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 150%
+	letter-spacing: 0.03em
+	color: #0071E3
+	margin-top: 8px
+	&::after
+		transition: all .5s
+		transform: rotate(0deg)
+		position: absolute
+		right: 7px
+		content: url(#{$assetImages}/catalogue__filer__parameters__button__img.svg)
+	&:hover
+		&::after
+				transition: all .5s
+				transform: rotate(180deg)
+.catalogue__cards
+	position: relative
+	display: flex
+	width: 100%
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: flex-start
+	.section__publications
+		margin-bottom: 32px
+		background: #fff
+		.publiction__expanded
+			margin: 0
+			.publiction__expanded__item
+				margin: 0
+				height: 446px
+				.publiction__expanded__item__desc
+					margin-left: 48px
+					margin-right: 80px
+				.publiction__expanded__item__img
+					height: 100%	
+					width: 100%
+					max-width: 267px
+					object-fit: cover
+					object-position: 50% 50%
+
+.section__catalogue
+	background: #F5F5F7
+.section__filterTop
+	background: #fff
+.cards
+	position: relative
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	align-items: stretch
+.card
+	position: relative
+	width: 100%
+	max-width: 293px
+	background: #fff
+	display: flex
+	flex-flow: column nowrap
+	align-items: stretch
+	justify-content: flex-start
+	padding-bottom: 24px
+	margin-bottom: 32px
+.card__img
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 24px
+	img
+		width: 100%
+		object-fit: cover
+		object-position: 50% 50%
+.card__desc
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	margin-top: 32px
+	padding-right: 24px
+	padding-left: 24px
+.card__desc__title
+	position: relative
+	display: flex
+	justify-content: flex-start
+	flex-flow: row wrap
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	display: flex
+	align-items: center
+	text-transform: uppercase
+	letter-spacing: 0.03em
+	color: #1D1D1F
+	margin-bottom: 32px
+	span
+		font-weight: 500
+		margin-right: 5px
+.card__desc__param
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	width: 100%
+	margin-bottom: 5px
+.card__desc__param__left
+	position: relative
+	width: 100%
+	display: block
+	font-style: normal
+	font-weight: 300
+	font-size: 14px
+	line-height: 170%
+	letter-spacing: 0.03em
+	color: #4F4F56
+.card__desc__param__right
+	position: relative
+	width: 100%
+	display: block
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 170%
+	text-align: right
+	letter-spacing: 0.03em
+	color: #4F4F56
+.card__cost
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-left: 24px
+	padding-right: 24px
+	margin-top: 20px
+.card__cost__price
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	font-style: normal
+	font-weight: 600
+	font-size: 14px
+	line-height: 150%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+.card__cost__availability
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	text-align: right
+	position: relative
+	width: 100%
+	white-space: nowrap
+.card__cost__availability.inStock
+	&::before
+		content: ''
+		position: relative
+		display: block
+		margin-right: 6px
+		width: 6px
+		height: 6px
+		background: #7FB33C
+		border-radius: 50%
+.card__cost__availability.outOfStock
+	&::before
+		content: ''
+		position: relative
+		display: block
+		margin-right: 6px
+		width: 6px
+		height: 6px
+		background: #A2A2AD
+		border-radius: 50%
+.catalogue__filer__lists.scatalogue__filer__heatingPower__lists
+	flex-flow: row nowrap
+.scatalogue__filer__heatingPower__item
+	position: relative
+	display: flex
+	width: 100%
+	padding-left: 12px
+	border: 1px solid #D2D2D7
+	border-radius: 4px
+	background: #F5F5F7
+	&::placeholder
+		font-style: normal
+		font-weight: 400
+		font-size: 14px
+		line-height: 135%
+		letter-spacing: 0.03em
+		color: #6C6C77
+	&:first-child
+		margin-right: 17px
+.filter__top
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	flex-flow: row nowrap
+.tilter__top__type
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	width: 100%
+	flex-flow: row nowrap
+.tilter__top__type__mob
+	display: none
+.tilter__top__type__item
+	position: relative
+	display: flex
+	width: auto
+	padding: 6px 24px
+	margin-right: 16px
+	background: #F5F5F7
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	align-items: center
+	letter-spacing: 0.03em
+	white-space: nowrap
+	color: #4F4F56
+.publiction__expanded__item__img
+	display: flex
+.publiction__expanded__item__img.publiction__expanded__item__img__2
+	display: none
+
+.filter__top__cost
+	position: relative
+	width: 100%
+	max-width: 300px
+	display: flex
+	justify-content: flex-end
+	align-items: center
+.filter__top__button
+	position: relative
+	width: auto
+	display: none
+	justify-content: space-between
+	align-items: center
+	padding: 10px 15px
+	border: 1px solid #E6E6EB
+	border-radius: 3px
+.filter__top__button__title
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+	&::after
+		position: relative
+		width: 20px
+		height: 20px
+		margin-left: 10px
+		content: url(#{$assetImages}/filter__top__button__img.svg)
+.filter__top__button__value
+	position: relative
+	display: flex
+	width: 20px
+	height: 20px
+	background: #FF2D39
+	justify-content: center
+	align-items: center
+	color: #fff
+	border-radius: 50%
+	font-style: normal
+	font-weight: 400
+	font-size: 10px
+	line-height: 150%
+	align-items: center
+	text-align: center
+	letter-spacing: 0.03em
+	margin-left: 10px
+	
+.filter__top__cost__select
+	position: relative
+	display: flex
+	justify-content: flex-end
+	align-items: flex-start
+	width: auto
+	border: none
+	&::before
+		position: relative
+		width: 20px
+		height: 20px
+		margin-right: 5px
+		content: url(#{$assetImages}/filter__top__cost__selec__img.svg)
+#topСostSelect
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: flex-end
+	border: none
+	cursor: pointer
+	border: 1px solid #fff
+	padding-left: 4px
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+	&:hover
+		border: 1px solid #E6E6EB
+		border-radius: 3px
+	&:focus
+		border: 1px solid #E6E6EB
+		border-radius: 3px
+.filter__top
+	margin-top: 56px
+.section.section__pagination
+	position: relative
+	width: 100%
+	align-items: center
+	justify-content: flex-start
+	padding-top: 56px
+	padding-left: 0
+	padding-right: 0
+	padding-bottom: 0
+.pagination__button__next
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: auto
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	color: #0071E3
+	margin-left: 40px
+	height: 32px
+	&:hover
+		text-decoration: underline
+		trarsition: all .5s
+	&::after
+		display: flex
+		align-self: center
+		width: 16px
+		height: 16px
+		position: relative
+		// justify-content: center
+		// align-items: center
+		margin-left: 10px
+		content: url(#{$assetImages}/pagination__button__next__img.svg)
+
+.pagination__button__prev
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: auto
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	color: #0071E3
+	margin-right: 40px
+	height: 32px
+	&:hover
+		text-decoration: underline
+		trarsition: all .5s
+	&::before
+		display: flex
+		align-self: center
+		width: 16px
+		height: 16px
+		position: relative
+		// justify-content: center
+		// align-items: center
+		transform: rotate(180deg)
+		margin-right: 9px
+		content: url(#{$assetImages}/pagination__button__next__img.svg)
+#pagination
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 32px
+.pagination__item
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+
+	width: 32px
+	height: 32px
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	color: #1D1D1F
+	transition: all .3s
+	&:hover
+		transition: all .3s
+		color: #0071E3	
+		background: #DEEEFF
+		border-radius: 3px
+	&.pagination__item__active
+		color: #0071E3	
+		background: #DEEEFF
+		border-radius: 3px
+
+
+		
+
+	
+		
+
+
+
+		

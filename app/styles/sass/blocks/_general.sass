@@ -1,0 +1,2058 @@
+.section
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: center
+	align-items: flex-start
+	padding: 0 30px
+	&.section__breadCrumbs
+		padding-bottom: 0
+		padding-top: 0
+	&.section__filterTop
+		padding-top: 64px
+		padding-bottom: 54px
+.section.section__breadCrumbs
+	flex-flow: ro nowrap
+.container
+	position: relative
+	display: flex
+	width: 100%
+	max-width: 1240px
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: flex-start
+.section__header
+	height: 100vh
+	background-image: url(#{$assetImages}/section__header__bg.png)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	.container	
+		max-width: 1760px
+.publications__sliderMob
+	display: none
+.section__topMenu
+	background: #1D1D1F
+	position: relative
+	z-index: 5
+	top: 0
+	left: 0
+	width: 100%
+	max-width: 1760px
+	height: 80px
+	padding: 0 
+	justify-content: space-between
+	align-items: center
+	flex-flow: row nowrap
+	display: flex
+.topMenu__nav
+	position: relative
+	width: 100%
+	max-width: 771px
+	display: flex
+	justify-content: center
+	align-items: center
+.topMenu
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: space-around
+	align-items: center
+	font-weight: 400
+	font-size: 14px
+	line-height: 135%
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+.topMenuItem
+	position: relative
+	display: flex
+	flex: 1 0 auto
+	cursor: pointer
+	align-items: center
+	font-weight: 400
+	font-size: 14px
+	line-height: 135%
+	justify-content: space-around
+	align-items: center
+	white-space: nowrap
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+	transition: all .3s
+	&:hover
+		color: $accent
+.topMenuItem__link
+	position: relative
+	display: flex
+	justify-content: center
+	width: 100%
+	left: 0
+	font-weight: 400
+	font-size: 14px
+	line-height: 135%
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+.humburger
+	display: none
+.overlay__header__logo__img
+	position: relative
+	width: 100%
+.topMenu__contacts__phone__img
+	position: relative 
+	display: none
+	width: 24px
+	height: 24px
+.topMenu__contacts
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	max-width: 260px
+	align-items: center
+.topMenuItem__accordion
+	transition: all 1s
+	&:hover
+		.internalList
+			display: flex
+.internalList
+	position: absolute
+	top: 60px
+	left: 30%
+	display: none	
+	position: relative
+	width: 100%
+	flex-flow: column nowrap
+.topMenuItem.topMenuItem__accordion
+	.topMenuItem__link
+		&::after
+			transform-origin: 3px 11px
+			transition: all .5s
+			position: absolute
+			right: 15px
+			top: -2px	
+			content: url(#{$assetImages}/topMenuItem__before.svg)
+	&:hover
+		.topMenuItem__link
+			color: #fff
+			&::after
+				transition: all .5s
+				transform: rotate(180deg)
+				transform-origin: 3px 11px
+				
+.internalList__item
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.internalList__link
+	position: relative
+	width: 100%
+	margin-bottom: 5px
+	font-weight: 400
+	font-size: 12px
+	line-height: 135%
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF		
+.topMenu__contacts__phone
+	width: 100%
+	white-space: nowrap
+	font-weight: 500
+	font-size: 18px
+	line-height: 135%
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+.topMenu__contacts__search
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	align-items: center
+.active
+	display: flex !important
+.topMenu__overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: auto
+	z-index: 10
+	background: #fff
+	display: none
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	width: 100%
+	max-width: 951px
+.catalogue__filer__wrap__overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: auto
+	z-index: 10
+	background: #fff
+	display: none
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	width: 100%
+	max-width: 951px
+	height: auto
+	padding: 32px 46px
+	padding-top: 50px
+	max-width: 422px
+	.overlay__clase
+		position: absolute
+		top: 10px
+		right: 10px
+.section__topMenu
+	align-self: center
+.section__topMenuWrapp
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 80px
+	background: #1d1d1f
+.overlay__clase
+	height: 28px
+	width: 28px
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-left: 80px
+	transition: all .5s
+	transform-origin: center
+	&:hover
+		transition: all .5s
+		transform: rotate(180deg)
+		transform-origin: center
+// .topMenu__contacts__search
+// 	transition: all .5s
+// 	transform-origin: center
+// 	&:hover
+// 		transition: all .5s
+// 		transform: rotate(180deg)
+// 		transform-origin: center
+
+		
+.overlay__header
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	border-bottom: 1px solid #E6E6EB
+	padding: 0 40px
+.overlay__header__logo
+	width: 100%
+	max-width: 336px
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.overlay__header__search__wrapp
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	width: 100%
+	max-width: 467px
+.overlay__header__search__img
+	position: absolute
+	left: 18px
+#overlay__header__search
+	background: #F5F5F7
+	border-radius: 8px
+	border: none
+	height: 54px
+	padding: 10px 10px 12px 56px
+	width: 100%
+	&::placeholder
+		font-family: $userfont
+		font-style: normal
+		font-weight: 300
+		font-size: 20px
+		line-height: 150%
+		text-align: left
+		color: #4F4F56
+.overlay__menu
+	position: relative
+	width: 100%
+	max-width: 336px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	padding: 48px 40px 0 40px
+	border-right: 1px solid #E6E6EB
+.overlay__list
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	flex-flow: column nowrap
+	
+.overlay__item
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	height: 36px
+	margin-bottom: 24px
+	width: 100%
+	transition: all .5s
+	font-weight: 300
+	font-size: 24px
+	line-height: 150%
+	color: $textcolor
+	&:hover 
+		.overlay__internalList
+			display: flex
+		
+.overlay__item__link
+	position: absolute
+	width: 100%
+	top: 0
+	left: 0
+	white-space: nowrap
+	font-family: $userfont
+	font-style: normal
+	font-weight: 300
+	font-size: 24px
+	line-height: 150%
+	color: $textcolor
+	transition: color .5s
+.overlay__internalList
+	display: none
+.overlay__accordion
+	transition: all .5s
+	&::before	
+		position: absolute
+		right: 0
+		top: 13px
+		content: url(#{$assetImages}/overlay__accordion__img.svg)
+		transition: all .5s
+		transform: rotate(315deg)
+		transform-origin: 3px 11px
+	&:hover
+		&::before	
+			transition: all .5s
+			transform: rotate(340deg)
+			transform-origin: 3px 11px
+		// .overlay__internalList
+		// 	display: flex
+.overlay__internalList
+	display: flex
+	position: absolute
+	right: -330px
+	top: 0
+	flex-flow: column nowrap
+	align-items: flex-start
+	justify-content: flex-start
+.overlay_internalList__item
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: start
+	align-items: flex-start
+.overlay_internalList__item__link
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	font-weight: 300
+	font-size: 24px
+	line-height: 150%
+	color: $textcolor
+.section__header
+	.container
+		justify-content: center
+		align-items: flex-start
+		height: 100vh
+.header__content
+	position: relative
+	width: 100%
+	display: flex
+	color: #fff
+	justify-content: space-between
+	align-items: center
+.header__content__title
+	font-weight: 400
+	font-size: 32px
+	line-height: 160%
+.header__content__desc
+	text-transform: uppercase
+	font-family: $userfont
+	font-weight: 100
+	font-size: 80px
+	line-height: 125%
+	text-align: right
+.section__topMenuWrapp
+	padding-left: 30px
+	padding-right: 30px
+//section__categories
+.section__categories
+	background: #fff
+	padding-top: 54px
+	padding-bottom: 84px
+	.container
+		max-width: 1760px
+.categories
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-around
+	align-items: center
+.categories__item
+	position: relative
+	width: 100%
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+.categories__item__img
+	position: relative
+	width: 100%
+	height: 131px
+	display: flex
+	justify-content: center
+	align-items: center
+	img
+		object-fit: cover
+		object-position: 50% 50%
+.categories__item__desc
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+	margin-top: 35px
+.categories__item__title
+	color: $textcolor
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 150%
+	text-align: center
+.categories__item__models
+	font-family: $userfont
+	font-style: normal
+	font-weight: 300
+	font-size: 16px
+	line-height: 150%
+	text-align: center
+	color: #4F4F56
+.categories__item__button
+	position: relative
+	margin-top: 37px
+	width: 40px
+	height: 40px
+	background: #E6E6EB
+	border-radius: 50%
+	margin-left: auto
+	margin-right: auto
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: background .5s
+.categories__item__button__img
+	align-self: center
+.categories__item
+	transition: all .5s
+	&:hover
+		.categories__item__title
+			transition: all .5s
+			color: transparent
+			background-clip: text
+			background-image: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%)
+		.categories__item__button
+			transition: background .5s
+			background: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%)
+//section__categories
+.section
+	padding-top: 70px
+	padding-bottom: 70px
+.section__header
+	padding-top: 0
+//section__newOffer
+.newOffer__sliderMob
+	display: none
+.newOffer
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+.section__newOffer
+	background: #F5F5F7
+.newOffer__top
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.newOffer__title
+	position: relative
+	width: 100%
+	color: $textcolor
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 160%
+	letter-spacing: 0.03em
+	text-transform: uppercase
+.newOffer__button,.button__blue
+	position: relative
+	width: 100%
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 150%
+	text-align: right
+	color: #0071E3
+	trarsition: all .5s
+	&::after
+		position: relative
+		margin-left: 8px
+		content: url(#{$assetImages}/newOffer__button__img.svg)
+	&:hover
+		text-decoration: underline
+		trarsition: all .5s
+
+.newOffer__item__desc__button
+	position: relative
+	width: 100%
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 11px
+	line-height: 150%
+	text-align: right
+	color: #0071E3
+	trarsition: all .5s
+	display: flex
+	align-self: flex-start
+	margin-left: 10px
+	margin-top: 24px
+	&::after
+		position: relative
+		margin-left: 8px
+		content: url(#{$assetImages}/newOffer__item__desc__button.svg)
+.newOffer__lists
+	position: relative
+	display: flex
+	width: 100%
+	flex-flow: row wrap
+	justify-content: space-between
+	align-items: flex-start
+	margin-top: 40px
+.newOffer__item
+	position: relative
+	width: 100%
+	max-width: 400px
+	background: #fff
+	display: flex
+	margin-bottom: 20px
+	flex-flow: column nowrap
+	padding-top: 44px 
+	padding-bottom: 34px
+.newOffer__item__lebel
+	position: absolute
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 5px 8px 2px 8px
+	top: 20px
+	left: 0
+	z-index: 2
+	width: auto
+	background: #7FB33C
+	font-family: $userfont
+	font-style: normal
+	font-weight: 500
+	font-size: 11px
+	line-height: 170%
+	text-align: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #FFFFFF
+.newOffer__item__img
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	img
+		object-fit: cover
+		object-position: 50% 50%
+.newOffer__item__line
+	position: relative
+	width: 100%
+	display: flex
+	margin-top: 20px
+.newOffer__item__line__dote
+	position: relative
+	width: 100%
+	max-width: 47px
+	margin-left: 16px
+	margin-right: 16px
+	display: flex
+	justify-content: center
+	align-items: center
+	.dote__wrapp
+		position: absolute
+		display: flex
+		bottom: -1px
+	span
+		position: relative
+		display: flex
+		border-radius: 50%
+		width: 5px
+		height: 5px
+		margin-top: 20px
+		background: #D2D2D7
+		margin-left: 8px
+		margin-right: 8px
+
+.newOffer__item__line__left,.newOffer__item__line__right
+	position: relative
+	width: 100%
+	border-bottom: 2px solid #E6E6EB
+.newOffer__item__desc
+	position: relative
+	margin-top: 20px
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	padding-left: 24px
+	padding-right: 24px
+.newOffer__item__desc__left
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+.newOffer__item__desc__title__1,.newOffer__item__desc__title__2
+	color: $textcolor
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 160%
+	align-items: center
+	letter-spacing: 0.03em
+	white-space: nowrap
+	span
+		font-weight: 500
+.section__publications.section
+	padding-bottom: 0
+.newOffer__item__desc__right
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-end
+.newOffer__item__desc__availability
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+.inStock
+	color: #7FB33C
+.outOfStock
+	color: #A2A2AD
+.newOffer__item__desc__price
+	font-family: $userfont
+	font-style: normal
+	font-weight: 600
+	font-size: 16px
+	line-height: 170%
+	text-align: right
+	letter-spacing: 0.03em
+	color: #1D1D1F
+.newOffer__item__lebel__blue
+	background: #0038FF
+.newOffer__item__lebel__red
+	background: #FF0000
+//section__newOffer
+
+
+//accordion
+	
+.accordion 
+	width: 100%
+	overflow: hidden
+	margin-top: $gutter	
+	&__intro 
+		position: relative
+		cursor: pointer
+	&__content 
+		padding: 0 20px
+		max-height: 0
+		overflow: hidden
+		will-change: max-height
+		transition: all 0.25s ease-out
+		color: #000
+		opacity: 0
+	&__active
+		padding-bottom: 30px
+		.accordion__intro 
+			opacity: 1
+			transition: background .3s ease
+			border-bottom: 2px solid #1D1D1F
+			.accordion__intro__button
+				opacity: 1
+		.accordion__content 
+			opacity: 1
+			padding: 31px 31px 31px 0
+			p
+				margin-left: 120px
+				font-family: $userfont
+				font-style: normal
+				font-weight: 400
+				font-size: 18px
+				line-height: 160%	
+				color: #4F4F56
+				text-align: left
+				width: 100%
+				max-width: 500px
+.accordion__intro	
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: flex-end	
+	padding-top: 32px
+	padding-bottom: 32px
+	border-bottom: 2px solid #E6E6EB
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 160%
+	color: #1D1D1F
+	span
+		margin-right: 96px 
+	&:hover
+		transition: background .3s ease
+		border-bottom: 2px solid #1D1D1F
+		.accordion__intro__button
+			opacity: 1
+.accordion__intro__button
+	display: flex
+	opacity: 0.5
+	font-family: $userfont
+	font-style: normal
+	font-weight: 300
+	font-size: 16px
+	line-height: 160%
+	text-align: right
+	color: #1D1D1F
+	&::after
+		position: relative
+		margin-left: 8px
+		content: url(#{$assetImages}/accordion__intro__button__img.svg)
+.services__title
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 160%
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #1D1D1F	
+.services__accordion__content__img
+	position: relative
+	width: 393px
+	height: 246px
+	object-fit: cover
+	object-position: 50% 50%	
+.accordion__content
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.services__accordion__content	
+	position: relative
+	display: flex
+	align-self: center
+	height: 100%
+.accordion__content 
+	opacity: 0
+	p
+		margin-left: 120px
+		font-family: $userfont
+		font-style: normal
+		font-weight: 400
+		font-size: 18px
+		line-height: 160%	
+		color: #4F4F56
+		text-align: left
+		width: 100%
+		max-width: 500px
+@keyframes rotationOpen 
+	0% 
+		transform-origin: 40% 15%
+		transform: rotate(0deg)
+	100% 
+		transform-origin: 40% 15%
+		transform: rotate(180deg)
+
+@keyframes rotationClose
+	0% 
+		transform-origin: 40% 15%
+		transform: rotate(180deg)
+	100% 
+		transform-origin: 40% 15%
+		transform: rotate(0deg)
+
+.section__title
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 160%
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #1D1D1F	
+
+
+
+//accordion
+//advantages
+.section__advantages
+	background: #F5F5F7
+	.container
+		justify-content: center
+		align-items: flex-start
+.advantages
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	width: 100%
+	max-width: 1240px
+	align-self: center
+	flex-flow: column nowrap
+.advantages__header
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: row nowrap
+	justify-content: center
+	align-items: center
+.advantages__title
+	margin-bottom: 40px
+.advantages__header__item
+	position: relative
+	width: 100%
+	max-width: 610px
+	height: 593px
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	background: #fff
+	flex-flow: column
+	padding: 56px
+	&:hover
+		.advantages__header__item__button
+			text-decoration: underline
+			trarsition: all .5s
+	&:first-child
+		margin-right: 20px
+.advantages__header__item__title
+	font-family: $userfont
+	font-style: normal
+	font-weight: 500
+	font-size: 32px
+	line-height: 135%
+	text-align: center
+	color: #1D1D1F	
+	text-align: center
+	width: 100%
+	position: relative
+	max-width: 420px
+	z-index: 1
+.advantages__header__item__img
+	position: absolute
+	bottom: 0
+	left: 0
+	z-index: 0
+	width: 100%
+	box-sizing: border-box
+	object-fit: cover
+	object-position: bottom center
+.advantages__header__item__button
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	margin-top: 40px
+	z-index: 1
+.advantages__content
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	background: #fff
+	margin-top: 20px
+	padding: 72px 88px
+.advantages__content__item
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	align-items: center
+	width: 100%
+	max-width: 300px 
+	text-align: center
+	margin-right: 20px
+	margin-left: 40px
+	&:hover
+		.advantages__content__button
+			text-decoration: underline
+			trarsition: all .5s
+.advantages__content__icon
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	img
+		width: 44px
+		height: 44px
+		align-self: center
+.advantages__content__title
+	position: relative
+	width: 100%
+	text-align: center
+	margin-top: 26px
+	font-family: $userfont
+	font-style: normal
+	font-weight: 500
+	font-size: 20px
+	line-height: 135%
+	text-align: center
+	color: #1D1D1F
+.advantages__content__desc
+	position: relative
+	width: 100%
+	text-align: center
+	margin-top: 14px
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 135%
+	text-align: center
+	color: #1D1D1F
+.advantages__content__button
+	font-size: 18px
+	text-align: center
+	margin-top: 44px
+
+//advantages
+
+//publications
+.publications__top
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	margin-bottom: 40px
+.publication
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-evenly
+	align-items: flex-start
+	flex-flow: row wrap
+.publication__item
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	text-align: left
+	width: 100%
+	max-width: 295px
+	transition: all .5s
+	&:hover
+		.publication__item__desc
+			color: #0071E3
+			transition: all .5s
+		.categories__item__button
+			transition: background .5s
+			background: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%)
+.publication__item__img
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	border: 2px solid #E6E6EB
+	box-sizing: border-box
+	img
+		position: relative
+		display: flex
+		width: 100%
+		box-sizing: border-box
+		object-fit: cover
+.publication__item__date
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	text-align: left
+	margin-top: 16px
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 170%
+	letter-spacing: 0.03em
+	color: #6C6C77
+.publication__item__desc
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	text-align: left
+	margin-top: 24px
+	font-family: $userfont
+	font-style: normal
+	font-weight: 500
+	font-size: 18px
+	line-height: 170%
+	color: #1D1D1F
+.publication__item__button.categories__item__button
+	background: #fff
+
+.publiction__expanded
+	position: relative
+	width: 100%
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	margin-top: 76px
+.publiction__expanded__item
+	position: relative
+	flex-flow: row nowrap
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 300px
+	width: 100%
+	margin-bottom: 64px
+.publiction__expanded__item__desc
+	position: relative
+	width: 100%
+	max-width: 738px
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+	text-align: left
+
+.publiction__expanded__item__desc__title
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	font-family: $userfont
+	font-style: normal
+	font-weight: 300
+	font-size: 32px
+	line-height: 135%
+	color: #1D1D1F
+	margin-bottom: 32px
+.publiction__expanded__item__desc__text
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 15px
+	line-height: 170%
+	color: #6C6C77
+.publiction__expanded__item__img
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	object-fit: cover
+	width: 100%
+	max-width: 400px
+	height: 100%
+.publiction__expanded__item__reverse
+	flex-flow: row-reverse nowrap
+//publications
+
+
+.productCard__top
+	position: relative
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	width: 100%
+.productCard__desc
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+.productCard__desc__button
+	position: absolute
+	left: -55px
+	top: 10px
+	img
+		position: relative
+		width: 40px
+		height: 40px
+
+.productCard__desc_title
+	font-family: $userfont
+	font-style: normal
+	font-weight: 300
+	font-size: 28px
+	line-height: 140%
+	color: #1D1D1F
+	text-transform: uppercase
+	span
+		font-weight: 500
+.productCard__desc__series
+	font-family: $userfont
+	font-style: normal
+	font-weight: 300
+	font-size: 28px
+	line-height: 140%
+	color: #1D1D1F
+.productCard__cost
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-end
+	width: 100%
+.productCard__cost__price
+	font-family: $userfont
+	font-style: normal
+	font-weight: 500
+	font-size: 24px
+	line-height: 135%
+	text-align: right
+	color: #1D1D1F
+.productCard__cost__article
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 150%
+	text-align: right
+	color: #6C6C77
+.productCard__content
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: space-between
+	align-items: flex-start
+	margin-top: 51px
+.productCard__gllery
+	position: relative
+	width: 100%
+	max-width: 720px
+	display: flex
+	justify-content: space-between
+
+.productCard__specific
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	margin-left: 47px
+.productCard__specific__title
+	position: relative
+	display: flex
+	justify-content: flex-start
+	width: 100%
+	font-family: $userfont
+	font-style: normal
+	font-weight: 500
+	font-size: 20px
+	line-height: 160%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+.productCard__specific__filter
+	position: relative
+	width: 100%
+	justify-content: flex-start
+	align-items: flex-start
+	.catalogue__filer__title.catalogue__filer__area__title
+		margin: 0
+		margin-top: 24px
+		margin-bottom: 16px
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		line-height: 170%
+		letter-spacing: 0.03em
+		color: #1D1D1F
+	.scatalogue__filer__area__lists
+		flex-flow: row nowrap
+		.catalogue__filer__area__item
+			width: 48px
+			height: 32px
+			margin-right: 8px
+			margin-bottom: 0
+	.catalogue__filer
+		justify-content: flex-start
+		padding: 0
+		border: none
+		.catalogue__filer__lists
+			position: relative
+			width: 100%
+			justify-content: flex-start
+			.catalogue__filer__color__item
+				width: 48px	
+				height: 48px
+		.catalogue__filer__title.catalogue__filer__color__title
+			margin-top: 32px
+			margin-bottom: 16px
+			font-style: normal
+			font-weight: 300
+			font-size: 14px
+			line-height: 170%
+			letter-spacing: 0.03em
+			color: #1D1D1F
+			span
+				font-weight: 500
+		.catalogue__filer__color__item
+			height: 48px
+
+.productCard__specific__desc
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	margin-top: 28px
+.productCard__specific__desc__item
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 48px
+	border-bottom: 1px solid rgba(230, 230, 235, 1)
+	border-bottom-style: dashed
+.productCard__specific__desc__item__title
+	position: relative
+	text-align: left
+	font-style: normal
+	font-weight: 300
+	font-size: 14px
+	line-height: 170%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+.productCard__specific__desc__item__value
+	position: relative
+	text-align: right
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 170%
+	text-align: right
+	letter-spacing: 0.03em
+	color: #1D1D1F
+.productCard__specific__desc__item__value__country
+	margin-right: 10px
+.productCard__specific__buttons
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	margin-top: 40px
+
+.section__suggestion
+	background: #F5F5F7
+	width: 100vw
+.suggestion
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	overflow: hidden
+.suggestion__title
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	margin-bottom: 40px
+.suggestion__tab-content
+	position: relative
+	width: 100%
+.suggestion__tab-pane
+	width: 100%
+.suggestion__title__all
+	position: relative
+	display: block
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 160%
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #D2D2D7
+	margin-right: 53px
+.suggestion__title__all.active
+	color: #1D1D1F
+// .suggestion__title__viewed
+// 	position: relative
+// 	display: block
+// 	font-style: normal
+// 	font-weight: 400
+// 	font-size: 24px
+// 	line-height: 160%
+// 	letter-spacing: 0.03em
+// 	text-transform: uppercase
+// 	color: #1D1D1F
+// 	margin-right: 53px
+// .suggestion__title__seriesProducts
+// 	position: relative
+// 	display: block
+// 	font-style: normal
+// 	font-weight: 400
+// 	font-size: 24px
+// 	line-height: 160%
+// 	letter-spacing: 0.03em
+// 	text-transform: uppercase
+// 	color: #1D1D1F
+.swiper__suggestion
+	position: relative
+	width: 100%
+	.swiper-wrapper
+		justify-content: flex-start
+		align-items: flex-start
+		align-self: flex-start
+	.swiper-slide
+		.card
+			max-width: 100%
+			margin-bottom: 0
+	.swiper-pagination
+		bottom: -2px
+		display: flex
+		justify-content: center
+		align-items: center
+		.swiper-pagination-bullet
+			background: #4F4F56
+			width: 4px
+			height: 4px
+		.swiper-pagination-bullet.swiper-pagination-bullet-active
+			width: 6px
+			height: 6px
+.swiper__suggestion__control__wrapp
+	position: absolute
+	width: 100%
+	top: -58px
+	right: 0
+	display: flex
+	justify-content: flex-end
+	align-items: flex-start
+.swiper__suggestion__control
+	position: relative
+	width: 100%
+	max-width: 140px
+	display: flex
+	justify-content: space-evenly
+	align-items: center
+.swiper-button-prev__suggestion,.swiper-button-next__suggestion
+	color: #4F4F56
+.swiper-button-next:after, .swiper-button-prev:after
+	font-size: 28px
+.section.section__featuresAticle
+	padding-top: 42px
+.productDesc__tabs
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	z-index: 2
+	.nav-tab
+		padding: 10px 
+		margin-left: 20px
+		margin-right: 20px
+		font-style: normal
+		font-weight: 500
+		font-size: 18px
+		line-height: 150%
+		text-align: center
+		color: rgba(210, 210, 215, 1)
+		border-bottom: 2px solid #ffffff00
+		&.active
+			color: $accent
+			border-bottom: 2px solid $accent
+.section__productDesc
+	padding-top: 0
+.productDesc__tab__content
+	position: relative
+	width: 100%
+	top: -2px
+	z-index: 1
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	border-top: 1px solid #E6E6EB
+	.tab-pane
+		position: relative
+		flex-flow: column
+		justify-content: flex-start
+		align-items: flex-start
+		padding-top: 80px
+	.productDesc__tab__content__title
+		position: relative
+		display: flex
+		width: 100%
+		justify-content: flex-start
+		font-style: normal
+		font-weight: 300
+		font-size: 32px
+		line-height: 140%
+		color: #1D1D1F
+	.productDesc__tab__content____desc
+		position: relative
+		display: flex
+		width: 100%
+		max-width: 820px
+		justify-content: flex-start
+		font-style: normal
+		font-weight: 400
+		font-size: 15px
+		line-height: 170%
+		color: #6C6C77
+		margin-top: 32px
+.section__features
+	padding-top: 0
+.features
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	flex-flow: column nowrap
+.productCard__gllery
+	.gallery-main .swiper-slide
+		padding: 20px
+		img
+			object-fit: contain
+			width: 100%
+			height: 100%
+	.gallery-main
+		.swiper-pagination
+			display: none
+.features__title
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	font-style: normal
+	font-weight: 300
+	font-size: 32px
+	line-height: 140%
+	color: #1D1D1F
+.features__lists
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: stretch
+	margin-top: 48px
+.productCard__cost__mob
+	display: none
+.featuresAticle__img.featuresAticle__img__mob
+	display: none
+.features__item
+	position: relative
+	width: 100%
+	max-width: 368px
+	display: flex
+	flex-flow: column nowrap
+	align-items: stretch
+	justify-content: flex-start
+	padding-bottom: 160px
+	margin-right: 52px
+	img
+		position: relative
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+		width: 48px
+		height: 48px
+		margin-bottom: 23px
+.features__item__title
+	position: relative
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 500
+	font-size: 20px
+	line-height: 140%
+	color: #1D1D1F	
+	margin-bottom: 23px
+.features__item__desc
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	font-style: normal
+	font-weight: 400
+	font-size: 15px
+	line-height: 170%
+	color: #6C6C77	
+.features__item__leble
+	position: absolute
+	bottom: 0
+	left: 0
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	padding-top: 58px	
+	min-height: 100px
+	img
+		position: absolute
+		top: 0
+		left: 0
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+		width: 48px
+		height: 48px
+		margin-bottom: 23px
+.features__item__leble__desc
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	font-style: normal
+	font-weight: 500
+	font-size: 15px
+	line-height: 150%
+	color: #1D1D1F	
+.featuresAticle
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 104px	
+	&:last-child
+		margin-bottom: 34px
+.featuresAticle__img
+	position: relative
+	width: 100%
+	max-width: 566px
+	display: flex
+	object-fit: cover
+	object-position: 50% 50%
+.featuresAticle__desc
+	position: relative
+	display: flex
+	width: 100%	
+	max-width: 553px
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: flex-start
+	// margin-left: 121px
+.featuresAticle__desc__title
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	text-align: left
+	font-style: normal
+	font-weight: 300
+	font-size: 32px
+	line-height: 140%
+	color: #1D1D1F
+	margin-bottom: 40px
+.featuresAticle__desc__text
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	text-align: left
+	font-style: normal
+	font-weight: 400
+	font-size: 15px
+	line-height: 170%
+	color: #6C6C77
+.featuresAticle.featuresAticle__revers
+	flex-flow: row-reverse nowrap
+	.featuresAticle__desc
+		position: relative
+		display: flex
+		width: 100%	
+		max-width: 566px
+		flex-flow: column
+	.featuresAticle__img
+		max-width: 553px
+
+
+
+
+///section__blog
+.blogs
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: row nowrap
+	justify-content: space-between
+	align-items: flex-start
+	margin-top: 56px
+.blog
+	position: relative
+	display: flex
+	flex: 3 1 auto
+	.publication
+		justify-content: flex-start
+		.publication__item
+			margin-right: 20px
+			margin-bottom: 56px
+		.publication__item__button.categories__item__button
+			display: none
+.chapter
+	position: relative
+	display: flex
+	flex: 1 0 295px
+	flex-flow: column nowrap
+	background: #F5F5F7
+	border: 1px solid #E6E6EB
+	padding: 30px 0 40px 0
+.chapter__title
+	padding-left: 24px
+	font-style: normal
+	font-weight: 500
+	font-size: 16px
+	line-height: 150%
+	display: flex
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: #1D1D1F
+	border-bottom: 1px solid #E6E6EB
+	padding-bottom: 30px
+.chapter__list
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	padding-left: 24px
+	padding-top: 30px
+.button__chapter.catalogue__filer__parameters__button
+	padding-left: 24px
+	&::after
+		right: 24px
+	margin-right: 24px
+.chapter__item
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+.chaper__item__link
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 135%
+	letter-spacing: 0.03em
+	color: #1D1D1F
+	margin-bottom: 15px
+.chapter__button__mob
+	position: relative
+	width: 100%
+	max-width: 320px
+	height: 42px
+	display: none
+	justify-content: center
+	align-items: center
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+	/* identical to box height, or 21px */
+	letter-spacing: 0.03em
+	border: 1px solid #E6E6EB
+	border-radius: 3px
+	/* main dark */
+
+	color: #1D1D1F
+	img
+		margin-left: 10px
+		height: 20px
+		width: 20px 
+.chapter__close.overlay__clase
+	display: none
+.chapter__button__mob__wrap
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+.section__blog
+	.section.section__pagination
+		justify-content: center
+		align-self: center
+
+
+.blogCards__wrap
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	margin-top: 56px
+	.chapter
+		width: 100%
+		max-width: 295px
+
+.blogCards
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+.blogCards__card
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+.blog__card__gallry
+	position: relative
+	display: flex
+	width: 820px
+	flex-flow: column nowrap
+.blogCards__desc
+	position: relative
+	width: 100%
+	max-width: 531px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.blogCards__desc__button.productCard__desc__button
+	top: 20px
+
+.blogCards__desc_title
+	position: relative
+	width: 100%
+	justify-content: flex-start
+	align-items: center
+	font-style: normal
+	font-weight: 400
+	font-size: 28px
+	line-height: 140%
+	color: #1D1D1F
+///section__blog
+
+
+
+.map
+	position: relative
+	width: 100%
+	height: 659px
+	display: flex
+	justify-content: center
+	align-items: center
+.section__map
+	padding-bottom: 0
+.section__contacts
+	padding-top: 40px
+	padding-bottom: 0
+.contacts
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	align-items: stretch
+.contacts__item
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	background: #FFFFFF
+	border: 1px solid #E6E6EB
+	padding-top: 56px
+	padding-left: 90px
+	padding-bottom: 64px
+	&:first-child
+		margin-right: 20px
+.feedback__titel
+	position: relative
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 135%
+	color: #1D1D1F
+	&::before
+		position: absolute
+		left: -45px
+		top: 0
+		width: 32px
+		height: 32px
+		content:  url(#{$assetImages}/feedback__titel__img.svg)
+.feedback__name
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 500
+	font-size: 16px
+	line-height: 170%
+	color: #1D1D1F
+	margin-top: 24px
+.feedback__email
+	margin-bottom: 24px
+.feedback__adress
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 170%
+	color: #1D1D1F
+.legalAdress__title
+	position: relative
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 135%
+	color: #1D1D1F
+	&::before
+		position: absolute
+		left: -45px
+		top: 0
+		width: 32px
+		height: 32px
+		content:  url(#{$assetImages}/legalAdress__title__img.svg)
+
+.legalAdress__requisites
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	margin-top: 20px
+.legalAdress__requisites__item
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 240%
+	color: #1D1D1F
+	span
+		color: $accent
+.section__askQuestion
+	padding-top: 0
+	padding-top: 40px
+	padding-bottom: 30px
+.askQuestion
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	border: 1px solid #E6E6EB
+	padding-left: 90px
+	padding-top: 56px
+	padding-bottom: 56px
+	padding-right: 96px
+	flex-flow: column nowrap
+
+.askQuestion__title
+	position: relative
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 135%
+	color: #1D1D1F
+	&::before
+		position: absolute
+		left: -45px
+		top: 0
+		width: 32px
+		height: 32px
+		content:  url(#{$assetImages}/askQuestion__title__img.svg)
+.askQuestion__form
+	position: relative
+	width: 100%
+	margin-top: 56px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+.askQuestion__form__left,.askQuestion__form__right
+	position: relative
+	display: flex
+	width: 100%
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+.askQuestion__form__left
+	margin-right: 44px
+.askQuestion__form__right
+	margin-left: 44px
+	padding-top: 42px
+.askQuestion__form__item__textarea
+	position: relative
+	width: 100%
+	height: 229px
+	border: 1px solid #A2A2AD
+.askQuestion__form__item__textarea__title
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%	
+	text-align: left
+	font-style: normal
+	font-weight: 500
+	font-size: 16px
+	line-height: 160%
+	color: #1D1D1F
+.askQuestion__form__item
+	position: relative
+	width: 100%
+	justify-content: flex-start
+	align-items: flex-start
+	height: 44px
+	border-top: none
+	border-left: none
+	border-right: none
+	border-bottom: 1px solid #A2A2AD
+	margin-bottom: 32px
+	&:last-child
+		margin-bottom: 0
+	&::placeholder
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%	
+		text-align: left
+		font-style: normal
+		font-weight: 500
+		font-size: 16px
+		line-height: 160%
+		color: #1D1D1F
+.askQuestion__politics
+	position: relative
+	width: 100%
+	justify-content: space-between
+	align-items: flex-start
+	display: flex
+	margin-top: 40px
+.askQuestion__politics__desk
+	position: relative
+	width: 100%
+	justify-content: flex-start
+	align-items: flex-start
+	display: flex
+	flex-flow: column nowrap
+	p
+		font-style: normal
+		font-weight: 400
+		font-size: 14px
+		line-height: 160%
+		display: flex
+		align-items: center
+		color: #6C6C77
+.askQuestion__politics__desk__links
+	position: relative
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	span
+		color: #6C6C77
+		font-size: 14px
+		margin-left: 5px
+		margin-right: 5px
+.askQuestion__politics__desk__link
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 160%
+	display: flex
+	align-items: center
+.input__file
+	opacity: 0
+	visibility: hidden
+	position: absolute
+.askQuestion__form__file__wrapp
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+.input__file-button-text
+	position: relative
+	display: flex
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	font-style: normal
+	font-weight: 500
+	font-size: 16px
+	line-height: 160%
+	color: #1D1D1F
+.input__file-icon-wrapper
+	position: relative
+	display: flex
+	width: 24px
+	height: 24px
+	justify-content: flex-start

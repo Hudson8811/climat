@@ -1,0 +1,13 @@
+.overlay__item:hover .overlay__item__link{
+	transition: all .5s;
+	color: transparent;
+	background-clip: text;
+
+	background-image: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%);
+}
+.overlay_internalList__item:hover .overlay_internalList__item__link{
+	transition: all .5s;
+	color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%);
+}
