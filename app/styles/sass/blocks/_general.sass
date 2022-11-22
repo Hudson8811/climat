@@ -213,7 +213,9 @@
 		right: 10px
 .catalogue__filer__wrap.active
 	overflow-y: scroll
-	max-height: 100vh
+	max-height: 100%
+.catalogue__filer__wrap__overlay
+	height: 100vh
 body.Bodymotionless
 	width: 100vw
 	height: 100vh
@@ -532,14 +534,44 @@ body.Bodymotionless
 	text-align: right
 	color: #0071E3
 	trarsition: all .5s
+	display: flex
+	justify-content: center
+	align-items: center
 	&::after
 		position: relative
+		display: block
 		margin-left: 8px
 		content: url(#{$assetImages}/newOffer__button__img.svg)
+		object-fit: cover
+		object-position: 50% 50%
 	&:hover
 		text-decoration: underline
 		trarsition: all .5s
-
+.advantages__content__button
+	position: relative
+	width: 100%
+	font-family: $userfont
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 150%
+	text-align: right
+	color: #0071E3
+	trarsition: all .5s
+	display: flex
+	justify-content: center
+	align-items: center
+	&::after
+		position: relative
+		display: block
+		margin-left: 8px
+		margin-top: 1px
+		content: url(#{$assetImages}/advantages__content__button.svg)
+		object-fit: cover
+		object-position: 50% 50%
+	&:hover
+		text-decoration: underline
+		trarsition: all .5s	
 .newOffer__item__desc__button
 	position: relative
 	width: 100%
