@@ -201,8 +201,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (filterTopButton !== null) {
 		let overlay = document.querySelectorAll(".catalogue__filer__wrap__overlay")
 		let overlayClose = document.querySelectorAll(".overlay__clase")
+		let bodyBodymotionless = document.querySelector('body')
 
 		function closeOverlay() {
+			bodyBodymotionless.classList.remove("Bodymotionless")
 			overlay.forEach(i => {
 				i.classList.add("animate__fadeOutLeft");
 				i.classList.remove("animate__fadeInLeft");
@@ -213,7 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		filterTopButton.forEach(item => {
-			item.addEventListener("click", () => {
+			item.addEventListener("click", () => {	
+				bodyBodymotionless.classList.add("Bodymotionless")
 				overlay.forEach(i => {
 					i.classList.add("active");
 					i.classList.remove("animate__fadeOutLeft");
@@ -235,6 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		})
 	}
+
+
 	let chapterButtonMob = document.querySelectorAll(".chapter__button__mob")
 	if (chapterButtonMob !== null) {
 		let overlay = document.querySelectorAll(".chapter")
