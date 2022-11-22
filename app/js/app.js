@@ -158,24 +158,35 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	// accordions
-
+	function bodyNoScroll() {
+		let bodyBodymotionless = document.querySelector('body')
+		bodyBodymotionless.classList.add("Bodymotionless")
+		
+	}
+	function bodyYesScroll() {
+		let bodyBodymotionless = document.querySelector('body')
+		bodyBodymotionless.classList.remove("Bodymotionless")	
+	}
+	
 	let menu = document.querySelectorAll(".menu")
 	if (menu !== null) {
 		let overlay = document.querySelectorAll(".topMenu__overlay")
 		let overlayClose = document.querySelectorAll(".overlay__clase")
 
-		function closeOverlay() {
+		function closeOverlay() { 
 			overlay.forEach(i => {
 				i.classList.add("animate__fadeOutLeft");
 				i.classList.remove("animate__fadeInLeft");
 				setTimeout(() => {
 					i.classList.remove("active");
 				}, 600)
+				bodyYesScroll() 
 			});
 		}
 
 		menu.forEach(item => {
 			item.addEventListener("click", () => {
+				bodyNoScroll()
 				overlay.forEach(i => {
 					i.classList.add("active");
 					i.classList.remove("animate__fadeOutLeft");
@@ -201,10 +212,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (filterTopButton !== null) {
 		let overlay = document.querySelectorAll(".catalogue__filer__wrap__overlay")
 		let overlayClose = document.querySelectorAll(".overlay__clase")
-		let bodyBodymotionless = document.querySelector('body')
+		
 
-		function closeOverlay() {
-			bodyBodymotionless.classList.remove("Bodymotionless")
+		function closeOverlay() { 
+			// bodyYesScroll() 
 			overlay.forEach(i => {
 				i.classList.add("animate__fadeOutLeft");
 				i.classList.remove("animate__fadeInLeft");
@@ -215,13 +226,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		filterTopButton.forEach(item => {
-			item.addEventListener("click", () => {	
-				bodyBodymotionless.classList.add("Bodymotionless")
+			item.addEventListener("click", () => {
+				// bodyNoScroll()
 				overlay.forEach(i => {
 					i.classList.add("active");
 					i.classList.remove("animate__fadeOutLeft");
 					i.classList.add("animate__fadeInLeft");
-				});
+				}); 
 			});
 		});
 		overlayClose.forEach(close => {
