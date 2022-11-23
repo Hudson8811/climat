@@ -184,11 +184,19 @@
 	width: 100vw
 	z-index: 10
 	height: 100vh
-	background: #00000081
 	display: none
 	justify-content: flex-start
 	align-items: flex-start
 	flex-flow: column nowrap
+.menu__overlay,.catalogue__filer__ovelay
+	position: absolute
+	top: 0
+	left: 0
+	display: block
+	width: 100vw
+	height: 100vh
+	background: #00000081
+	z-index: 15
 .topMenu__overlay__wrap
 	position: relative
 	background: #fff
@@ -199,6 +207,7 @@
 	width: 100%
 	z-index: 20
 	max-width: 951px
+	height: 100%
 
 body.Bodymotionless
 	width: 100vw

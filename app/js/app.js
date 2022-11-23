@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (menu !== null) {
 		let overlay = document.querySelectorAll(".topMenu__overlay")
 		let overlayClose = document.querySelectorAll(".overlay__clase__menu")
-		let topMenuOverlay = document.querySelectorAll(".topMenu__overlay")
+		let topMenuOverlay = document.querySelectorAll(".menu__overlay")
 
 		function closeOverlay() { 	
 			overlay.forEach(i => {
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (filterTopButton !== null) {
 		let overlay = document.querySelectorAll(".catalogue__filer__wrap__overlay")
 		let overlayClose = document.querySelectorAll(".overlay__clase__filter")
-		let catalogueFilerOverlay = document.querySelectorAll(".catalogue__filer__wrap__overlay")
+		let catalogueFilerOverlay = document.querySelectorAll(".catalogue__filer__ovelay")
 
 		function closeOverlay() {  
 			overlay.forEach(i => {
