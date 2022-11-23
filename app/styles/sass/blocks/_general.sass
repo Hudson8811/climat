@@ -182,7 +182,7 @@
 	top: 0
 	left: 0
 	width: 100vw
-	z-index: 10
+	z-index: 1000
 	height: 100vh
 	display: none
 	justify-content: flex-start
@@ -293,6 +293,51 @@ body.Bodymotionless
 	width: 100vw
 	height: 100vw
 	background: #000000ad
+.chapter__desc__wrap
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	z-index: 20
+	flex: 1 0 295px
+	flex-flow: column nowrap
+	background: #F5F5F7
+	border: 1px solid #E6E6EB
+	padding: 30px 0 40px 0
+	height: 446px
+.chapter__list
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	padding-left: 24px
+	padding-top: 30px
+	overflow-y: auto
+	overflow-x: hidden
+	&::-webkit-scrollbar
+		width: 4px
+		background: #6C6C77
+	&::-webkit-scrollbar-track 
+		background: #d2d2d7
+		height: 8px
+	&::-webkit-scrollbar-thumb
+		background-color: #8b8b91
+		border-radius: 20px
+		border: 3px solid #ffffff00
+.chapter
+	position: relative
+	display: flex
+	z-index: 1
+.chapter__overlay
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 5
+	display: none
+	width: 100vw
+	height: 100vh
+	background: #000000ad
 .overlay__menu.overlay__menu__mob
 	display: none
 .overlay__menu__desc
@@ -302,8 +347,7 @@ body.Bodymotionless
 	justify-content: flex-start
 	align-items: flex-start
 	flex-flow: row nowrap
-	padding-bottom: 30px
-	height: calc( 100vh - 200px )
+	height: calc( 100vh - 180px )
 .menu__desc__right
 	position: relative
 	width: 100%	
@@ -410,9 +454,10 @@ body.Bodymotionless
 		background: #d2d2d7
 		height: 8px
 	&::-webkit-scrollbar-thumb
-		background-color: #8b8b91
+		background-color: #555555
 		border-radius: 20px
 		border: 3px solid #ffffff00
+		margin-bottom: 30px
 .overlay__menu.overlay__menu__mob
 		&::-webkit-scrollbar
 			width: 4px
@@ -437,17 +482,7 @@ body.Bodymotionless
 		max-height: 300px
 		.overlay__internalList
 			height: 100%
-			overflow-y: auto
-			&::-webkit-scrollbar
-				width: 4px
-				background: #6C6C77
-			&::-webkit-scrollbar-track 
-				background: #d2d2d7
-				height: 8px
-			&::-webkit-scrollbar-thumb
-				background-color: #8b8b91
-				border-radius: 20px
-				border: 3px solid #ffffff00
+
 .overlay__internalList
 	display: flex
 	position: relative
@@ -508,14 +543,18 @@ body.Bodymotionless
 	position: relative
 	width: 100%
 	display: flex
-	justify-content: space-around
+	justify-content: center
 	align-items: center
+	flex-flow: row wrap
 .categories__item
 	position: relative
 	width: 100%
+	max-width: 218px
 	flex-flow: column nowrap
 	justify-content: flex-start
 	align-items: center
+	margin-bottom: 50px
+
 .categories__item__img
 	position: relative
 	width: 100%
@@ -622,12 +661,13 @@ body.Bodymotionless
 	color: #0071E3
 	trarsition: all .5s
 	display: flex
-	justify-content: center
+	justify-content: flex-end
 	align-items: center
 	&::after
 		position: relative
 		display: block
-		margin-left: 8px
+		margin-left: 7px
+		margin-top: 2px
 		content: url(#{$assetImages}/newOffer__button__img.svg)
 		object-fit: cover
 		object-position: 50% 50%
@@ -1774,14 +1814,7 @@ body.Bodymotionless
 			margin-bottom: 56px
 		.publication__item__button.categories__item__button
 			display: none
-.chapter
-	position: relative
-	display: flex
-	flex: 1 0 295px
-	flex-flow: column nowrap
-	background: #F5F5F7
-	border: 1px solid #E6E6EB
-	padding: 30px 0 40px 0
+
 .chapter__title
 	padding-left: 24px
 	font-style: normal
@@ -1795,14 +1828,7 @@ body.Bodymotionless
 	color: #1D1D1F
 	border-bottom: 1px solid #E6E6EB
 	padding-bottom: 30px
-.chapter__list
-	position: relative
-	display: flex
-	flex-flow: column nowrap
-	justify-content: flex-start
-	align-items: flex-start
-	padding-left: 24px
-	padding-top: 30px
+
 .button__chapter.catalogue__filer__parameters__button
 	padding-left: 24px
 	&::after

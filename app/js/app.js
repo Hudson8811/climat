@@ -303,6 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (chapterButtonMob !== null) {
 		let overlay = document.querySelectorAll(".chapter")
 		let overlayClose = document.querySelectorAll(".chapter__close")
+		let chapterOverlay = document.querySelectorAll(".chapter__overlay")
 
 		function closeOverlay() {
 			if (window.matchMedia('(max-width: 1200px)').matches) {
@@ -318,6 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		chapterButtonMob.forEach(item => {
 			item.addEventListener("click", () => {
+				bodyNoScroll()
 				overlay.forEach(i => {
 					i.classList.add("active");
 					i.classList.remove("animate__fadeOutLeft");
@@ -327,6 +329,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 		overlayClose.forEach(close => {
 			close.addEventListener("click", () => {
+				closeOverlay();
+				bodyYesScroll();
+			});
+		});
+		chapterOverlay.forEach(close => {
+			close.addEventListener("click", () => {
+				bodyYesScroll();
 				closeOverlay();
 			});
 		});

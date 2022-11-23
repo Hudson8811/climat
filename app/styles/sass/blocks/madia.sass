@@ -1,6 +1,8 @@
 
 //`@media (max-width: 1400px)  ...
 @media (max-width: 1440px)
+	.blogCards__desc
+		width: 100vw
 	.productCard__desc
 		padding-left: 50px
 	.productCard__desc__button
@@ -26,6 +28,8 @@
 		justify-content: center
 //`@media (max-width:  1200px)  ...
 @media (max-width: 1200px)
+	.chapter__desc__wrap
+		height: 100vh
 	.chapter__button__mob
 		display: flex
 		z-index: 2
@@ -37,9 +41,11 @@
 		margin-top: 32px
 	.chapter__close.overlay__clase
 		display: flex
+	.chapter__overlay
+		display: flex
 	.chapter
 		display: none
-		position: absolute
+		position: fixed
 		top: 0
 		left: 0
 		z-index: 10
@@ -155,6 +161,8 @@
 		padding-top: 0
 //`@media (max-width: 992px)  ...
 @media (max-width: 992px)
+	.overlay__header
+		height: 180px
 	.askQuestion__form__right
 		margin-left: 0
 		margin-top: 40px
@@ -284,13 +292,10 @@
 	.accordion__active .accordion__content p
 		max-width: 100%
 
-
 	.categories
 		flex-flow: row wrap
-		justify-content: center 
-	.categories__item
-		flex: 1 0 218px
-		margin-bottom: 50px
+		justify-content: center
+
 	.header__content__desc
 		font-size: 64px
 		line-height: 1.15
