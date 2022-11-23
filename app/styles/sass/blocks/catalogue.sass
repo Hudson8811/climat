@@ -5,7 +5,40 @@
 	justify-content: flex-start
 	flex-flow: row wrap
 	margin-top: 40px
-
+.catalogue__filer__wrap__overlay__fon
+	position: relative
+	background: #fff
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	width: 100%
+	height: 100vh
+	padding: 32px 46px
+	padding-top: 50px
+	max-width: 422px
+.catalogue__filer__wrap__overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: auto
+	z-index: 10
+	display: none
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	width: 100vw
+	height: 100vh
+	background: #00000081
+	.overlay__clase
+		position: absolute
+		top: 10px
+		right: 10px
+.catalogue__filer__wrap.active
+	overflow-y: scroll
+	max-height: 100%
+.catalogue__filer__wrap__overlay
+	height: 100%
 .catalogue__filer__wrap__overlay
 	display: none
 .breadCrumbs__nav
@@ -106,6 +139,8 @@
 	position: relative
 	display: flex
 	width: 330px
+	height: 100%
+	background: #fff
 	border: 1px solid #E6E6EB
 	flex-flow: column nowrap
 	justify-content: flex-start

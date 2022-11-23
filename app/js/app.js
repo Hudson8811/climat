@@ -167,20 +167,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		let bodyBodymotionless = document.querySelector('body')
 		bodyBodymotionless.classList.remove("Bodymotionless")	
 	}
+
 	
 	let menu = document.querySelectorAll(".menu")
 	if (menu !== null) {
 		let overlay = document.querySelectorAll(".topMenu__overlay")
-		let overlayClose = document.querySelectorAll(".overlay__clase")
+		let overlayClose = document.querySelectorAll(".overlay__clase__menu")
+		let topMenuOverlay = document.querySelectorAll(".topMenu__overlay")
 
-		function closeOverlay() { 
+		function closeOverlay() { 	
 			overlay.forEach(i => {
 				i.classList.add("animate__fadeOutLeft");
 				i.classList.remove("animate__fadeInLeft");
 				setTimeout(() => {
 					i.classList.remove("active");
 				}, 600)
-				bodyYesScroll() 
+	
 			});
 		}
 
@@ -197,25 +199,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		overlayClose.forEach(close => {
 			close.addEventListener("click", () => {
 				closeOverlay();
+				bodyYesScroll(); 
 			});
 		});
-		document.addEventListener('click', (e) => {
-			function hasAncestor(el, ancestor) {
-				return el.parentNode && (el.parentNode === ancestor || hasAncestor(el.parentNode, ancestor));
-			}
-			if (!hasAncestor(e.target, overlay[0]) && !hasAncestor(e.target, menu[0])) {
+		topMenuOverlay.forEach(close => {
+			close.addEventListener("click", () => {
 				closeOverlay();
-			}
-		})
+				bodyYesScroll(); 
+			});
+		});
+
 	}
 	let filterTopButton = document.querySelectorAll(".filter__top__button")
 	if (filterTopButton !== null) {
 		let overlay = document.querySelectorAll(".catalogue__filer__wrap__overlay")
-		let overlayClose = document.querySelectorAll(".overlay__clase")
-		
+		let overlayClose = document.querySelectorAll(".overlay__clase__filter")
+		let catalogueFilerOverlay = document.querySelectorAll(".catalogue__filer__wrap__overlay")
 
-		function closeOverlay() { 
-			// bodyYesScroll() 
+		function closeOverlay() {  
 			overlay.forEach(i => {
 				i.classList.add("animate__fadeOutLeft");
 				i.classList.remove("animate__fadeInLeft");
@@ -227,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		filterTopButton.forEach(item => {
 			item.addEventListener("click", () => {
-				// bodyNoScroll()
+				bodyNoScroll()
 				overlay.forEach(i => {
 					i.classList.add("active");
 					i.classList.remove("animate__fadeOutLeft");
@@ -238,23 +239,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		overlayClose.forEach(close => {
 			close.addEventListener("click", () => {
 				closeOverlay();
+				bodyYesScroll();
 			});
 		});
-		document.addEventListener('click', (e) => {
-			function hasAncestor(el, ancestor) {
-				return el.parentNode && (el.parentNode === ancestor || hasAncestor(el.parentNode, ancestor));
-			}
-			if (!hasAncestor(e.target, overlay[0]) && !hasAncestor(e.target, filterTopButton[0])) {
+		catalogueFilerOverlay.forEach(item => {
+			item.addEventListener("click", () => {
+				bodyYesScroll();
 				closeOverlay();
-			}
-		})
+			});
+		});
+
 	}
 
 
 	let chapterButtonMob = document.querySelectorAll(".chapter__button__mob")
 	if (chapterButtonMob !== null) {
 		let overlay = document.querySelectorAll(".chapter")
-		let overlayClose = document.querySelectorAll(".overlay__clase")
+		let overlayClose = document.querySelectorAll(".chapter__close")
 
 		function closeOverlay() {
 			if (window.matchMedia('(max-width: 1200px)').matches) {
@@ -282,14 +283,14 @@ document.addEventListener('DOMContentLoaded', () => {
 				closeOverlay();
 			});
 		});
-		document.addEventListener('click', (e) => {
-			function hasAncestor(el, ancestor) {
-				return el.parentNode && (el.parentNode === ancestor || hasAncestor(el.parentNode, ancestor));
-			}
-			if (!hasAncestor(e.target, overlay[0]) && !hasAncestor(e.target, chapterButtonMob[0])) {
-				closeOverlay();
-			}
-		})
+		// document.addEventListener('click', (e) => {
+		// 	function hasAncestor(el, ancestor) {
+		// 		return el.parentNode && (el.parentNode === ancestor || hasAncestor(el.parentNode, ancestor));
+		// 	}
+		// 	if (!hasAncestor(e.target, overlay[0]) && !hasAncestor(e.target, chapterButtonMob[0])) {
+		// 		closeOverlay();
+		// 	}
+		// })
 	}
 
 
