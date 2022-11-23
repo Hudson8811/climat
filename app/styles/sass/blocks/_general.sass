@@ -205,9 +205,9 @@
 	align-items: flex-start
 	flex-flow: column nowrap
 	width: 100%
+	height: 100%
 	z-index: 20
 	max-width: 951px
-	height: 100%
 
 body.Bodymotionless
 	width: 100vw
@@ -293,6 +293,50 @@ body.Bodymotionless
 	width: 100vw
 	height: 100vw
 	background: #000000ad
+.overlay__menu.overlay__menu__mob
+	display: none
+.overlay__menu__desc
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: row nowrap
+	padding-bottom: 30px
+	height: calc( 100vh - 200px )
+.menu__desc__right
+	position: relative
+	width: 100%	
+	max-width: 337px
+	display: flex
+	height: 100%
+	overflow-y: auto
+.overlay__menu.overlay__menu__mob
+	height: 100vh
+	overflow-y: auto
+.menu__desc__left
+	position: relative
+	width: 100%	
+	display: flex
+	flex-flow: column nowrap
+	padding: 48px 40px 
+	height: 100%
+	overflow-y: auto
+.overlay__list__tabContent
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+.menu__desc__left
+	.overlay__internalList
+		display: none
+		position: relative
+.menu__desc__left
+	.overlay__internalList.activeTabMenu
+		display: flex
+		position: relative
 .overlay__menu
 	position: relative
 	width: 100%
@@ -303,8 +347,7 @@ body.Bodymotionless
 	align-items: flex-start
 	padding: 48px 40px 0 40px
 	border-right: 1px solid #E6E6EB
-	overflow-y: scroll
-	overflow-x: hidden
+
 .overlay__list
 	position: relative
 	display: flex
@@ -343,8 +386,7 @@ body.Bodymotionless
 	line-height: 150%
 	color: $textcolor
 	transition: color .5s
-.overlay__internalList
-	display: none
+
 .overlay__accordion
 	transition: all .5s
 	&::before	
@@ -360,14 +402,56 @@ body.Bodymotionless
 			transition: all .5s
 			transform: rotate(340deg)
 			transform-origin: 3px 11px
+.menu__desc__left,.menu__desc__right
+	&::-webkit-scrollbar
+		width: 4px
+		background: #6C6C77
+	&::-webkit-scrollbar-track 
+		background: #d2d2d7
+		height: 8px
+	&::-webkit-scrollbar-thumb
+		background-color: #8b8b91
+		border-radius: 20px
+		border: 3px solid #ffffff00
+.overlay__menu.overlay__menu__mob
+		&::-webkit-scrollbar
+			width: 4px
+			background: #6C6C77
+		&::-webkit-scrollbar-track 
+			background: #d2d2d7
+			height: 8px
+		&::-webkit-scrollbar-thumb
+			background-color: #8b8b91
+			border-radius: 20px
+			border: 3px solid #ffffff00
+.overlay__accordion.activeTabMenu
+	transition: all .5s
+	&::before	
+		transition: all .5s
+		transform: rotate(340deg)
+		transform-origin: 3px 11px
 		// .overlay__internalList
 		// 	display: flex
+.overlay__menu__mob
+	.overlay__item
+		max-height: 300px
+		.overlay__internalList
+			height: 100%
+			overflow-y: auto
+			&::-webkit-scrollbar
+				width: 4px
+				background: #6C6C77
+			&::-webkit-scrollbar-track 
+				background: #d2d2d7
+				height: 8px
+			&::-webkit-scrollbar-thumb
+				background-color: #8b8b91
+				border-radius: 20px
+				border: 3px solid #ffffff00
 .overlay__internalList
 	display: flex
-	position: absolute
-	right: -330px
-	top: 0
-	z-index: 10
+	position: relative
+	width: 100%
 	flex-flow: column nowrap
 	align-items: flex-start
 	justify-content: flex-start

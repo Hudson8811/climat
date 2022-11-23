@@ -158,6 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	// accordions
+	
 	function bodyNoScroll() {
 		let bodyBodymotionless = document.querySelector('body')
 		bodyBodymotionless.classList.add("Bodymotionless")
@@ -167,14 +168,60 @@ document.addEventListener('DOMContentLoaded', () => {
 		let bodyBodymotionless = document.querySelector('body')
 		bodyBodymotionless.classList.remove("Bodymotionless")	
 	}
+	// overlay__menu__desc
+	
 
+
+	// overlay__menu__desc
 	
 	let menu = document.querySelectorAll(".menu")
 	if (menu !== null) {
 		let overlay = document.querySelectorAll(".topMenu__overlay")
 		let overlayClose = document.querySelectorAll(".overlay__clase__menu")
 		let topMenuOverlay = document.querySelectorAll(".menu__overlay")
+		let tabNavsMenu = document.querySelectorAll(".overlay__menu__desc .overlay__accordion");
+		let tabPanesMenu = document.querySelectorAll(".overlay__menu__desc .overlay__internalList");
 
+		if(tabNavsMenu !==null & tabPanesMenu !==null) {
+			tabClick() 
+		}
+		function tabClick() {
+			for (var i = 0; i < tabNavsMenu.length; i++) {
+
+				tabNavsMenu[i].addEventListener("click", function(e){
+					e.preventDefault();
+					var activeTabAttr = e.target.getAttribute("data-tab");
+		
+					for (var j = 0; j < tabNavsMenu.length; j++) {
+						var contentAttr = tabPanesMenu[j].getAttribute("data-tab-content");
+		
+						if (activeTabAttr === contentAttr) {
+							tabNavsMenu[j].classList.add("activeTabMenu", "animate__fadeIn");
+							tabPanesMenu[j].classList.add("activeTabMenu", "animate__fadeIn"); 
+						} else {
+							tabNavsMenu[j].classList.remove("activeTabMenu", "animate__fadeIn");
+							tabPanesMenu[j].classList.remove("activeTabMenu", "animate__fadeIn");
+						}
+					};
+				});
+				tabNavsMenu[i].addEventListener("mouseover", function(e){
+					e.preventDefault();
+					var activeTabAttr = e.target.getAttribute("data-tab");
+		
+					for (var j = 0; j < tabNavsMenu.length; j++) {
+						var contentAttr = tabPanesMenu[j].getAttribute("data-tab-content");
+		
+						if (activeTabAttr === contentAttr) {
+							tabNavsMenu[j].classList.add("activeTabMenu", "animate__fadeIn");
+							tabPanesMenu[j].classList.add("activeTabMenu", "animate__fadeIn"); 
+						} else {
+							tabNavsMenu[j].classList.remove("activeTabMenu", "animate__fadeIn");
+							tabPanesMenu[j].classList.remove("activeTabMenu", "animate__fadeIn");
+						}
+					};
+				});
+			}
+		}
 		function closeOverlay() { 	
 			overlay.forEach(i => {
 				i.classList.add("animate__fadeOutLeft");

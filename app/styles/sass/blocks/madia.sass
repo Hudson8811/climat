@@ -318,6 +318,12 @@
 		display: none
 //`@media (max-width: 768px)  ...
 @media (max-width: 768px)
+	.overlay__menu__desc
+		height: calc( 100vh - 156px )
+	.menu__desc__right
+		max-width: 280px
+	.menu__desc__left
+		padding: 20px
 	.map
 		height: 400px
 		overflow: hidden
@@ -601,8 +607,6 @@
 	.overlay__menu
 		padding: 20px
 		max-width: 280px
-	.overlay__internalList
-		right: -220px
 	.overlay__item__link,.overlay__item,.overlay_internalList__item__link
 		font-size: 18px
 	.overlay__accordion:before
@@ -620,8 +624,13 @@
 		padding-top: 45px
 	.categories__item
 		margin-bottom: 40px
+
 //`@media (max-width: 576px)  ...
 @media (max-width: 576px)
+	.overlay__menu.overlay__menu__mob
+		display: flex
+	.overlay__menu__desc
+		display: none
 	.feedback__titel,.legalAdress__title,.askQuestion__title
 		font-size: 20px
 	.feedback__name,.feedback__adress,.feedback__email
@@ -874,6 +883,7 @@
 		right: 0
 		left: 20px
 		top: 10px
+
 	.newOffer__item
 		margin: 0 !important
 	.newOffer__item

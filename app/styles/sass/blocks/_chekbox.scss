@@ -384,10 +384,14 @@
   background-image: url(#{$assetImages}/radioCastom__2.svg);
 }
 .checkboxCastomArea:checked+label::after {
-  border: 2px solid transparent;
-	border-image:  linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%);
-	border-image-slice: 1;
-	border-radius: 3px;
+  border: 2px solid transparent; 
+  border-radius: 3px; /*1*/
+  background: linear-gradient(253.74deg, #5CBEDF 10.15%, #6BA2F3 51.91%, #7593FA 90.32%) border-box; /*3*/
+  -webkit-mask: /*4*/
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
 }
 
 /* стили при наведении курсора на checkbox */
