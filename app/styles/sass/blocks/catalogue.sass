@@ -5,40 +5,7 @@
 	justify-content: flex-start
 	flex-flow: row wrap
 	margin-top: 40px
-.catalogue__filer__wrap__overlay__fon
-	position: relative
-	background: #fff
-	display: flex
-	justify-content: flex-start
-	align-items: flex-start
-	flex-flow: column nowrap
-	width: 100%
-	height: 100vh
-	padding: 32px 46px
-	padding-top: 50px
-	z-index: 20
-	max-width: 422px
-.catalogue__filer__wrap__overlay
-	position: fixed
-	top: 0
-	left: 0
-	width: auto
-	z-index: 10
-	display: none
-	justify-content: flex-start
-	align-items: flex-start
-	flex-flow: column nowrap
-	width: 100vw
-	height: 100vh
-	.overlay__clase
-		position: absolute
-		top: 10px
-		right: 10px
-.catalogue__filer__wrap.active
-	overflow-y: scroll
-	max-height: 100%
-.catalogue__filer__wrap__overlay
-	height: 100%
+
 .catalogue__filer__wrap__overlay
 	display: none
 .breadCrumbs__nav
@@ -139,15 +106,13 @@
 	position: relative
 	display: flex
 	width: 330px
-	height: 100%
-	background: #fff
 	border: 1px solid #E6E6EB
 	flex-flow: column nowrap
 	justify-content: flex-start
 	align-items: flex-start
 	padding: 24px 0
 	margin-right: 20px
-	margin-bottom: 30px
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 .catalogue__filer__parameters__value
 	position: relative
 	display: flex
@@ -236,20 +201,31 @@
 	.section__publications
 		margin-bottom: 32px
 		background: #fff
+		width: 100%
 		.publiction__expanded
 			margin: 0
+			width: 100%
 			.publiction__expanded__item
 				margin: 0
-				height: 446px
+				min-height: 446px
+				height: auto
 				.publiction__expanded__item__desc
 					margin-left: 48px
-					margin-right: 80px
+					margin-right: 347px
+					margin-top: 48px
+					margin-bottom: 48px
 				.publiction__expanded__item__img
+					position: absolute
+					right: 0
+					display: flex
 					height: 100%	
 					width: 100%
 					max-width: 267px
-					object-fit: cover
+					object-fit: fill
 					object-position: 50% 50%
+				.publiction__expanded__item__img__2
+					display: none
+					position: relative
 
 .section__catalogue
 	background: #F5F5F7
@@ -414,32 +390,18 @@
 	align-items: center
 	width: 100%
 	flex-flow: row nowrap
-
 .tilter__top__type
 	position: relative
 	display: flex
 	justify-content: flex-start
 	align-items: center
 	width: 100%
-	overflow-x: auto
 	flex-flow: row nowrap
-	&::-webkit-scrollbar
-		height: 2px
-		background: #6C6C77
-	&::-webkit-scrollbar-track 
-		background: #d2d2d7
-		height: 8px
-	&::-webkit-scrollbar-thumb
-		background-color: #8b8b91
-		border-radius: 20px
-		border: 3px solid #ffffff00
-	.tilter__top__type__item
-		margin-bottom: 8px
 .tilter__top__type__mob
 	display: none
 .tilter__top__type__item
 	position: relative
-	display: inline-block
+	display: flex
 	width: auto
 	padding: 6px 24px
 	margin-right: 16px
@@ -448,6 +410,7 @@
 	font-weight: 400
 	font-size: 14px
 	line-height: 150%
+	align-items: center
 	letter-spacing: 0.03em
 	white-space: nowrap
 	color: #4F4F56

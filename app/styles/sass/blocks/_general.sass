@@ -1223,13 +1223,14 @@ body.Bodymotionless
 	display: flex
 	justify-content: space-between
 	align-items: center
-	height: 300px
+	min-height: 300px
+	height: auto
 	width: 100%
 	margin-bottom: 64px
 .publiction__expanded__item__desc
 	position: relative
 	width: 100%
-	max-width: 738px
+	margin-right: 430px
 	display: flex
 	flex-flow: column nowrap
 	justify-content: flex-start
@@ -1250,6 +1251,7 @@ body.Bodymotionless
 .publiction__expanded__item__desc__text
 	width: 100%
 	display: flex
+	position: relative
 	justify-content: flex-start
 	font-family: $userfont
 	font-style: normal
@@ -1258,7 +1260,8 @@ body.Bodymotionless
 	line-height: 170%
 	color: #6C6C77
 .publiction__expanded__item__img
-	position: relative
+	position: absolute
+	right: 0
 	display: flex
 	justify-content: center
 	align-items: center
@@ -1268,6 +1271,12 @@ body.Bodymotionless
 	height: 100%
 .publiction__expanded__item__reverse
 	flex-flow: row-reverse nowrap
+	.publiction__expanded__item__desc
+		margin-right: 0
+		margin-left: 430px
+	.publiction__expanded__item__img
+		position: absolute
+		left: 0
 //publications
 
 
