@@ -54,9 +54,9 @@
 		.overlay__clase
 			height: 15px
 			width: 15px
-			position: absolute 
+			position: absolute
 			right: 24px
-			top: 15px	
+			top: 15px
 			img
 				width: 100%
 				height: 100%
@@ -102,11 +102,22 @@
 		.swiper-slide
 			img
 				width: 100%
-	.catalogue__main
+	/*.catalogue__main
 		.cards
 			justify-content: center
 			.card
-				margin: 10px
+				margin: 10px*/
+	.cards
+		width: calc(100% + 20px)
+		margin-left: -20px
+		margin-bottom: -20px
+
+
+	.cards--catalog .card
+		max-width: calc(50% - 20px)
+		margin-left: 20px
+		margin-bottom: 20px
+
 	.catalogue__cards .section__publications .publiction__expanded .publiction__expanded__item
 		height: auto
 		.publiction__expanded__item__desc
@@ -124,12 +135,12 @@
 		padding: 50px
 	.accordion__active .accordion__content
 		padding-right: 0
-	.accordion__active .accordion__content p
+	.accordion__active .accordion__content .accordion__content-inner
 		margin-left: 10px
 		margin-right: 10px
 	.categories
 		flex-flow: row wrap
-		justify-content: center 
+		justify-content: center
 	.categories__item
 		flex: 1 0 290px
 		margin-bottom: 50px
@@ -150,7 +161,7 @@
 		.topMenuItem__link
 			&::after
 				right: 3px
-		
+
 //`@media (max-width: 1048px)  ...
 @media (max-width: 1048px)
 	.features__item__leble
@@ -189,7 +200,7 @@
 		&::-webkit-scrollbar
 			height: 2px
 			background: #6C6C77
-		&::-webkit-scrollbar-track 
+		&::-webkit-scrollbar-track
 			background: #d2d2d7
 			height: 8px
 		&::-webkit-scrollbar-thumb
@@ -232,7 +243,7 @@
 
 			img
 				height: 100%
-				object-fit: contain 
+				object-fit: contain
 	.catalogue__filer__wrap
 		display: none
 	.filter__top
@@ -255,11 +266,11 @@
 		display: none
 	.publiction__expanded__item__img
 		width: 40%
-	.catalogue__main
+	/*.catalogue__main
 		.cards
 			justify-content: center
 			.card
-				max-width: 270px
+				max-width: 270px*/
 	.publiction__expanded__item__reverse
 		.publiction__expanded__item__desc
 			margin-left: 20px
@@ -289,7 +300,7 @@
 		align-items: center
 	.accordion__content
 		padding-top: 32px
-	.accordion__active .accordion__content p
+	.accordion__active .accordion__content .accordion__content-inner
 		max-width: 100%
 
 	.categories
@@ -424,7 +435,7 @@
 		flex-flow: column nowrap
 	.productCard__gllery
 		width: 100%
-		max-width: 100%	
+		max-width: 100%
 		.gallery-main
 			width: 100%
 			height: 320px
@@ -459,7 +470,7 @@
 		font-size: 16px
 	.productCard__specific__buttons
 		margin-top: 32px
-		.productCard__specific__button__order 
+		.productCard__specific__button__order
 			margin-top: 14px
 	.productCard__specific
 		margin-left: 0
@@ -538,7 +549,7 @@
 						max-width: 100%
 						height: 250px
 						object-fit: cover
-		
+
 
 	.footer__lists__catalog
 		display: none
@@ -577,7 +588,7 @@
 	.categories
 		padding-top: 40px
 		flex-flow: row wrap
-		justify-content: center 
+		justify-content: center
 	.categories__item
 		flex: 1 0 218px
 		margin-bottom: 40px
@@ -586,7 +597,7 @@
 		height: 58px
 	.section__header
 		display: none
-	.menu 
+	.menu
 		.humburger
 			display: block
 		.search
@@ -599,7 +610,7 @@
 		justify-content: flex-start
 		align-items: flex-start
 	.overlay__clase
-		position: absolute 
+		position: absolute
 		top: 20px
 		right: 20px
 	.overlay__header__logo
@@ -608,7 +619,7 @@
 		justify-content: flex-start
 		margin-top: -20px
 	.overlay__header__search__wrapp
-		max-width: 100%	
+		max-width: 100%
 	.overlay__menu
 		padding: 20px
 		max-width: 280px
@@ -725,8 +736,14 @@
 		margin-right: 5px
 	.pagination__button__next
 		margin-left: 5px
-	.catalogue__main .cards .card
+	/*.catalogue__main .cards .card
+		max-width: 100%*/
+	.cards
+		width: 100%
+
+	.cards--catalog .card
 		max-width: 100%
+		margin-left: 0
 	// .tilter__top__type__mob
 	// 	display: flex
 	// 	width: 100vw
@@ -768,7 +785,7 @@
 			margin-bottom: 0
 	.publications__sliderMob
 		display: flex
-	.publications__button 
+	.publications__button
 		display: flex
 		width: 100%
 		justify-content: center
@@ -796,7 +813,7 @@
 	.advantages__header__item__title
 		line-height: 135%
 	.accordion__intro__button
-		p 
+		p
 			display: none
 	.accordion__intro
 		padding-top: 18px
@@ -863,7 +880,7 @@
 
 	.section
 		padding-left: 20px
-		padding-right: 20px 
+		padding-right: 20px
 	.categories__item
 		flex: 1 0 180px
 		margin-bottom: 40px
