@@ -564,10 +564,10 @@ $(window).on('load',function (){
 
 		tl.fromTo(left_arc, 1,
 			{
-				strokeDashoffset:0
+				strokeDashoffset:217
 			},
 			{
-				strokeDashoffset:-217,
+				strokeDashoffset:0,
 				ease: "none"
 			},
 			0
@@ -583,7 +583,7 @@ $(window).on('load',function (){
 			1
 		);
 		tl.addLabel("center", 1);
-		tl.progress(0.5).pause();
+		tl.progress(0).pause();
 
 		$(document).on("mousemove", function (e) {
 			let position = e.pageX;
