@@ -520,6 +520,7 @@ import MotionPathPlugin from "gsap/MotionPathPlugin.js";
 gsap.registerPlugin(MotionPathPlugin);
 $(window).on('load',function (){
 	if ($('.home-hero').length > 0){
+		$('.home-hero__image video').prop('preload','auto');
 		$('.section__topMenuWrapp').addClass('hero-top');
 
 		let heroStatus = 'left';
@@ -590,15 +591,34 @@ $(window).on('load',function (){
 			if (position < window.innerWidth / 3){
 				if (heroStatus != 'left'){
 					$('.home-hero__image').stop();
-					$('.home-hero__image--left').fadeIn(500).siblings('.home-hero__image').fadeOut(200);
+					$('.home-hero__image--left video').trigger('play');
+					$('.home-hero__image--left').fadeIn(500).siblings('.home-hero__image').fadeOut(200,function (){
+						let video1 = $('.home-hero__image--center video').get(0);
+						let video2 = $('.home-hero__image--right video').get(0);
+						if(!video1.paused && video1.readyState > video1.HAVE_CURRENT_DATA){
+							video1.pause();
+						}
+						if(!video2.paused && video2.readyState > video2.HAVE_CURRENT_DATA){
+							video2.pause();
+						}
+					});
 					heroStatus = 'left';
 					tl.reverse();
 				}
 			} else if (position < window.innerWidth * 2 / 3) {
 				if (heroStatus != 'center'){
 					$('.home-hero__image').stop();
-					$('.home-hero__image--center').fadeIn(500).siblings('.home-hero__image').fadeOut(200);
-
+					$('.home-hero__image--center video').trigger('play');
+					$('.home-hero__image--center').fadeIn(500).siblings('.home-hero__image').fadeOut(200,function (){
+						let video1 = $('.home-hero__image--left video').get(0);
+						let video2 = $('.home-hero__image--right video').get(0);
+						if(!video1.paused && video1.readyState > video1.HAVE_CURRENT_DATA){
+							video1.pause();
+						}
+						if(!video2.paused && video2.readyState > video2.HAVE_CURRENT_DATA){
+							video2.pause();
+						}
+					});
 					if (heroStatus == 'right'){
 						heroStatus = 'center';
 						tl.tweenTo( tl.previousLabel() );
@@ -610,7 +630,17 @@ $(window).on('load',function (){
 			} else {
 				if (heroStatus != 'right'){
 					$('.home-hero__image').stop();
-					$('.home-hero__image--right').fadeIn(500).siblings('.home-hero__image').fadeOut(200);
+					$('.home-hero__image--right video').trigger('play');
+					$('.home-hero__image--right').fadeIn(500).siblings('.home-hero__image').fadeOut(200,function (){
+						let video1 = $('.home-hero__image--left video').get(0);
+						let video2 = $('.home-hero__image--center video').get(0);
+						if(!video1.paused && video1.readyState > video1.HAVE_CURRENT_DATA){
+							video1.pause();
+						}
+						if(!video2.paused && video2.readyState > video2.HAVE_CURRENT_DATA){
+							video2.pause();
+						}
+					});
 					heroStatus = 'right';
 					tl.play();
 				}
