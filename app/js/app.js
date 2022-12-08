@@ -524,6 +524,7 @@ $(window).on('load',function (){
 		$('.section__topMenuWrapp').addClass('hero-top');
 
 		let heroStatus = 'left';
+		$('.home-hero__image--left video').trigger('play');
 
 		let tl = gsap.timeline({});
 		tl.timeScale( 2 );
